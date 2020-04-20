@@ -1,38 +1,77 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 15px;
   text-align: center;
+  border-bottom:1px solid lightgrey;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frame {
+  margin: 40px auto;
+  width: 320px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frame .title {
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frame .subtitle {
+  padding: 5px 10px;
+  display: block;
+  color:gray;
 }
 
-.App-link {
-  color: #61dafb;
+.frame .timer {
+  text-align: center;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.frame .options {
+  text-align: right;
+  padding: 10px;
+}
+
+.frame .options span{
+  display: inline-block;
+  padding: 0px 5px;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+Button {
+  width: 100%;
+  padding: 9px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+
+
+form label {
+  display: block;
+  padding: 10px 10px 0 10px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 8px 5px;
+  display: block;
+  width: 300px;
+  margin: 5px auto;
 }
